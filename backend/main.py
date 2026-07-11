@@ -24,7 +24,7 @@ def root():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://siem-system.vercel.app", "http://siem-system-epwj4w9x3-kaushikii-s-projects.vercel.app"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173","http://siem-system-epwj4w9x3-kaushikii-s-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
