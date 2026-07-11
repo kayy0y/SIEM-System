@@ -18,6 +18,10 @@ from report_generator import generate_incident_report
 
 app = FastAPI(title="SIEM System API", version="1.0.0")
 
+@app.get("/")
+def root():
+    return {"message": "SIEM Backend Running"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://localhost:5173"],
