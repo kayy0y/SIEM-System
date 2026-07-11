@@ -119,3 +119,7 @@ Use `python -m pip install -r requirements.txt`
 
 **CORS error in browser:**
 Make sure backend is running on port 8000 before opening frontend.
+
+## Live Demo
+
+https://siem-system-epwj4w9x3-kaushikii-s-projects.vercel.app
