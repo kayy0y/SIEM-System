@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIEM System — AI Threat Detection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #07090f;
+      --bg-secondary: #0d1117;
+      --bg-card: #111827;
+      --bg-elevated: #1a2332;
+      --border: #1e2d3d;
+      --border-subtle: #162032;
+      --text-primary: #f0f6ff;
+      --text-secondary: #8b9ab0;
+      --text-muted: #4a5568;
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --critical: #ef4444;
+      --high: #f97316;
+      --medium: #eab308;
+      --low: #22c55e;
+      --grad-main: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      --grad-border: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+      --sidebar-w: 260px;
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #f1f5f9;
+      --bg-card: #ffffff;
+      --bg-elevated: #f8fafc;
+      --border: #e2e8f0;
+      --border-subtle: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #2d4a6a; }
+
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+
+    /* Gradient border utility */
+    .grad-border {
+      position: relative;
+      background: var(--bg-card);
+      border-radius: 12px;
+    }
+    .grad-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 12px;
+      padding: 1px;
+      background: var(--grad-border);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.5;
+    }
+
+    .grad-border-critical::before { background: linear-gradient(135deg, #ef4444, #f97316); opacity: 0.8; }
+    .grad-border-active::before { opacity: 1; }
+
+    input, select, button { font-family: inherit; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

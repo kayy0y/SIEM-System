@@ -1,0 +1,24 @@
+Jun 28 09:01:12 webserver sshd[1234]: Failed password for root from 185.220.101.5 port 4421 ssh2
+Jun 28 09:01:13 webserver sshd[1234]: Failed password for root from 185.220.101.5 port 4422 ssh2
+Jun 28 09:01:14 webserver sshd[1234]: Failed password for root from 185.220.101.5 port 4423 ssh2
+Jun 28 09:01:15 webserver sshd[1234]: Failed password for root from 185.220.101.5 port 4424 ssh2
+Jun 28 09:01:16 webserver sshd[1234]: Failed password for root from 185.220.101.5 port 4425 ssh2
+Jun 28 09:01:17 webserver sshd[1234]: Failed password for admin from 91.108.4.22 port 3322 ssh2
+Jun 28 09:01:18 webserver sshd[1234]: Failed password for admin from 91.108.4.22 port 3323 ssh2
+Jun 28 09:02:00 webserver sshd[1234]: Accepted password for developer from 192.168.1.100 port 52341 ssh2
+Jun 28 09:03:15 webserver apache2[5678]: 103.214.109.22 - - "GET /admin/login HTTP/1.1" 404 512
+Jun 28 09:03:16 webserver apache2[5678]: 103.214.109.22 - - "GET /wp-admin HTTP/1.1" 404 512
+Jun 28 09:03:17 webserver apache2[5678]: 103.214.109.22 - - "GET /?id=1 UNION SELECT 1,2,3-- HTTP/1.1" 400 217
+Jun 28 09:03:18 webserver apache2[5678]: 103.214.109.22 - - "GET /?id=1 OR 1=1-- HTTP/1.1" 400 217
+Jun 28 09:04:00 webserver kernel: [UFW BLOCK] IN=eth0 SRC=5.188.206.14 DST=10.0.0.1 PROTO=TCP DPT=22
+Jun 28 09:04:01 webserver kernel: [UFW BLOCK] IN=eth0 SRC=5.188.206.14 DST=10.0.0.1 PROTO=TCP DPT=23
+Jun 28 09:04:02 webserver kernel: [UFW BLOCK] IN=eth0 SRC=5.188.206.14 DST=10.0.0.1 PROTO=TCP DPT=3389
+Jun 28 09:04:03 webserver kernel: [UFW BLOCK] IN=eth0 SRC=5.188.206.14 DST=10.0.0.1 PROTO=TCP DPT=445
+Jun 28 09:04:04 webserver kernel: [UFW BLOCK] IN=eth0 SRC=5.188.206.14 DST=10.0.0.1 PROTO=TCP DPT=8080
+Jun 28 09:05:00 webserver nginx[9012]: 192.168.1.50 - user=johndoe "POST /api/data HTTP/1.1" 200 1024
+Jun 28 09:06:00 webserver auth[3333]: Unauthorized access attempt user=root from 46.182.21.7
+Jun 28 09:06:01 webserver auth[3333]: Privilege escalation attempt detected user=guest from 46.182.21.7
+Jun 28 09:07:00 webserver syslog: Critical - malware signature detected on process pid=4455 from 1.180.217.7
+Jun 28 09:08:00 webserver sshd[1234]: Accepted password for analyst from 192.168.1.101 port 54321 ssh2
+Jun 28 09:09:00 webserver apache2[5678]: 8.8.8.8 - - "GET /index.html HTTP/1.1" 200 2048
+Jun 28 09:10:00 webserver sshd[1234]: Connection closed by 192.168.1.101 port 54321
